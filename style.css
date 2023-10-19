@@ -1,16 +1,44 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    }
+.header {
+    text-align: center;
+    font-size: 40px;
+} 
+.modal_box h1 {
+    text-align: center;
+
+}
+.info {
+    padding: 15px 20px;
+    background: rgb(158, 154, 154);
+    border-radius: 20px;
+}
+
+.li {
+    margin-top: 100px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: #eee;
 }
 
+
 .info {
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 40px;
 }
 
-ul {
-    list-style-image: url(TG.png); 
-   }
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 .modal {
     position: fixed;
@@ -27,6 +55,7 @@ ul {
     visibility: hidden;
     opacity: 0;
     transition: opacity .4s, visibility .4s;
+    
 
 }
 
@@ -39,6 +68,7 @@ ul {
     background-color: white;
     transform: scale(0);
     transition: transform .8s;
+    border-radius: 20px;
 }
 
 .modal_close {
@@ -70,4 +100,32 @@ ul {
 
 .modal.open .modal_box {
     transform: scale(1);
+}
+
+#btn {
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#btn:hover {
+    opacity: 0.6;
+}
+
+.accord {
+    background-color: rgb(44, 38, 38);
+    color: white;
+    border: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.cont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.accord:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
