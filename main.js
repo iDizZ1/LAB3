@@ -11,9 +11,9 @@ document.querySelectorAll(".accord").forEach((el) => {
         let cont = el.nextElementSibling;
 
         if(cont.style.maxHeight) {
-            documeny.querySelectorAll(".cont").forEach((el) => el.style.maxHeight = null) 
+            document.querySelectorAll(".cont").forEach((el) => el.style.maxHeight = null) 
         } else {
-            document.querySelectorAll(".cont").forEach((el) => el.style.maxHeight = null)
+            document.querySelectorAll(".cont").forEach((el) => el.style.maxHeight = null) 
             cont.style.maxHeight = cont.scrollHeight + "px" 
         }
     })

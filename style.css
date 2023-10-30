@@ -12,7 +12,7 @@
 }
 .info {
     padding: 15px 20px;
-    background: rgb(158, 154, 154);
+    background: rgb(37, 119, 187);
     border-radius: 20px;
 }
 
@@ -22,7 +22,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #eee;
+    background: #07e2ff;
 }
 
 
@@ -32,8 +32,12 @@ body {
     font-size: 40px;
 }
 
-a {
+.info a {
     color: white;
+    text-decoration: none;
+}
+.cont a {
+    color: orange;
     text-decoration: none;
 }
 a:hover {
@@ -51,7 +55,6 @@ a:hover {
     display: grid;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
     visibility: hidden;
     opacity: 0;
     transition: opacity .4s, visibility .4s;
@@ -122,10 +125,14 @@ a:hover {
 .cont {
     max-height: 0;
     overflow: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .accord:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.cont p {
+    margin: 0px;
 }
